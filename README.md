@@ -1,4 +1,4 @@
-# Respositório de código aberto voltado a textos sobre Finanças
+# Repositório de código aberto voltado a textos sobre Finanças
 Este espaço é dedicado à disponibilização de escritos sobre finanças sob licença Creative Commons CC BY-SA. Basicamente, **qualquer pessoa pode copiar, modificar, distribuir ou melhorar qualquer um dos textos aqui disponibilizados**, inclusive para fins comerciais, desde que atribua o crédito (mencione a autoria original, o endereço web [http://github.com/rcgalvao/financas](http://github.com/rcgalvao/financas) e as mudanças feitas) e que disponibilize o material produzido sob a mesma licença [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/br/).
 
 Desta forma, qualquer professor, pesquisador, aluno ou instituição poderá baixar uma cópia de qualquer um dos textos aqui disponibilizados, propor melhorias (recomendo que as faça através do próprio git), propor alterações ou incorporar novos textos. Sinta-se incentivado a entrar em contato, melhorar, copiar, criar e difundir esta série de conteúdos.
