@@ -1,0 +1,140 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+% pacote babel ou equivalent
+
+\title{Estrutura de Capital}
+
+\author{Galvão, Ricardo\\
+\and 
+Galvão, Duzza Gabriella}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+
+A temática Estrutura de Capital é um tema relevante não apenas no campo das finanças, mas também nas demais áreas das organizações. Este ensaio apresenta os principais aspectos da estrutura de capital através de apresentação teórica e exemplos práticos, fazendo parte da série de trabalhos de código aberto do professor Dr. Ricardo Galvão.
+
+\end{abstract}
+
+\newpage
+
+\section{O que é Custo de Capital?}
+
+O Custo de Capital consiste no retorno mínimo esperado pelos financiadores de recursos de uma empresa, isto é, seus credores e acionistas, determinando a viabilidade do investimento realizado.
+
+O Custo de Capital é basicamente composto por uma taxa livre de risco mais um prêmio associado ao risco do investimenro. Se o retorno for maior que o Custo de Capital, temos um valor presente líquido positivo, se for inferior, então o retorno não é capaz de remunerar os credores e acionistas e, portanto, tal investimento torna-se inviável.\\
+
+\fbox{Custo de Capital= Taxa Livre de Risco + Prêmio pelo Risco}\\
+
+A equação acima mostra que quanto mais arriscado o investimento, maior será o custo de capital pela condição de um prêmio de risco mais alto.
+
+A estrutura de capital da empresa é a composição considerada ótima para adquirir recursos de financiamento, que normalmente ocorre pela participação do Capital Próprio e do Capital de Terceiros. Como as fontes de financiamento são diversas, o Custo Total de Capital é determinado pela média ponderada dos custos associados a cada alternativa de financiamento, o chamado Custo Médio Ponderado de Capital ou WACC (Weighted Average Cost of Capital).
+
+\section{Custo de Capital de Terceiros}
+
+O Custo de Capital de Terceiros está relacionado com o passivo da empresa, ou seja, as obrigações da empresa com terceiros e corresponde aos investimentos feitos por recursos de entidades externas. É, portanto, a remuneração exigida pelos credores de dívidas da empresa. Na prática, é o custo líquido do IR para se levantar recursos de empréstimos e financiamentos no mercado.
+
+O custo de terceiros é representado por K$_{i}$ e pode ser calculado pela seguinte fórmula:\\\\
+
+$K_{i} (após \  IR) = K_{i} (antes \  IR) \times (1-IR)$\\
+
+onde:
+IR = alíquota de Imposto de Renda considerada para a decisão de investimento.\\
+
+As principais vantagens do financiamento por capital de terceiros é que os credores não possuem o direito de participar do gerenciamento do investimento e ao fazer um empréstimo, a empresa possui total conhecimento a respeito da dívida adquirida, facilitando a previsão dos pagamentos a serem realizados. O lado negativo se dá pelo pagamento de juros da dívida, bem como pela imagem da empresa diante de novos investidores, que visualizando a existência de passivos elevados, podem considerá-la um mau investimento.
+
+\section{Custo de Capital Próprio}
+
+O Custo de Capital Próprio está relacionado com o patrimônio líquido da empresa e corresponde ao retorno mínimo exigido pelos acionistas sobre o valor (capital próprio) injetado na empresa. É necessário, portanto, que haja um rendimento mínimo que remunere os acionistas e mantenha o preço de mercado de suas ações.
+Enquanto o custo da dívida (no Capital de Terceiros) corresponde aos juros (que pode ser facilmente calculado), o cálculo do Custo de Capital Próprio torna-se complexo, uma vez que o investidor só aceitará investir recursos próprios caso o retorno esperado seja significativamente maior do que ele teria em um investimento garantido, é a famosa relação risco/retorno.
+Atualmente, o mercado adota o Modelo de Precificação dos Ativos ou Modelo do CAPM (Capital Asset Pricing Model) para calcular o Custo de Capital Próprio.
+
+\subsection{Cálculo do Custo de Capital Próprio através do Modelo do CAPM}
+
+De acordo com o Modelo do CAPM, o Custo de Capital Próprio deve prometer um retorno que compense o risco assumido pelos acionistas. No CAPM, a taxa de retorno exigida pelos acionistas deve incluir a taxa livre de risco adicionada de um prêmio que remunere o risco, representado pelo coeficiente beta. Visualize a fórmula abaixo:\\\\
+
+$K_{e} = R_{F} + \beta(R_{M} - R_{F})$\\
+
+onde:\\
+
+$K_{e}$ = taxa mínima de retorno exigida pelos acionistas (Custo de Capital Próprio);
+$R_{F}$ = taxa de retorno de ativos livres de risco;
+$\beta$ = coeficiente beta que equivale ao risco sistemático;
+$R_{M}$ = rentabilidade da carteira de mercado (índice do mercado de ações);
+$(R_{M} - R_{F})$ = prêmio pelo risco de mercado;
+[$\beta(R_{M} - R_{F})$] = risco de mercado ajustado ao ativo em avaliação.
+
+Quanto maior for o $\beta$, maior será o risco e, portanto, maior será a remuneração exigida pelos acionistas.
+
+
+\subsection{Cálculo do beta para empresas alavancadas}
+
+O beta de uma empresa é afetado diretamente por seu endividamento, portanto, quanto mais endividada a empresa estiver, maior será o seu beta. Desta forma, para empresas alavancadas, isto é, empresas com dívidas, o beta é calculado por outra fórmula, correspondendo ao risco total que envolve o risco econômico (risco do negócio) e o risco financeiro (advindo de financiamento por dívidas).
+Neste caso, a fórmula do beta dar-se-á por:\\\\
+
+
+$\beta_{L} = \beta_{U} \times [1+[\frac{P}{PL}]\times (1-IR)]$\\
+
+onde:\\
+
+$\beta_{L}$ = coeficiente beta de uma empresa que usa alavancagem financeira (é a medida de beta total, isto é, aborda risco econômico e risco financeiro); $\beta_{U}$ = coeficiente beta de uma empresa sem dívidas (apenas aborda o risco econômico); P = passivos onerosos (dívida); PL = Patrimônio Líquido (capital próprio); IR = alíquota do IR.\\
+
+Para obter o Custo do Capital Próprio alavancado, deve-se calcular o beta para empresas alavancadas e depois substituir o valor corresponde no beta da fórmula do CAPM vista na subseção anterior. 
+
+
+\section{Custo Médio Ponderado de Capital (WACC)}
+
+O Custo Médio Ponderado de Capital ou WACC (Weighted Average Cost of Capital) corresponde à média ponderada dos custos de capital próprio e de capital de terceiros, usados conjuntamente para financiamento de recursos em uma empresa. O WACC torna-se importante tanto para avaliar a viabilidade de novos projetos quanto para calcular o valor de mercado de uma empresa. Quanto menor o WACC, maior será o valor agregado à empresa. 
+
+A fórmula abaixo corresponde ao cálculo do WACC.\\
+
+$r_{a} = (w_{i} \times r_{i}) + (w_{p} \times r_{p}) + (w_{s} \times r_{r \ \ ou \ \ n})$\\ 
+
+onde:\\
+
+$w_{i}$ = participação do capital de terceiros de longo prazo na estrutura de capital; $w_{p}$ = participação das ações preferenciais na estrutura de capital; $w_{s}$ = participação do capital próprio na estrutura de capital; $w_{i} + w_{p} + w_{s} = 1,0$; $r_{i}$ = custo do capital de terceiros; $r_{p}$ = csto das ações preferenciais; $r_{r}$ = custo dos lucros retidos; $r_{n}$ = custo de novas ações ordinárias.\\
+
+A fim de simplificar o cálculo, os pesos devem ser convertidos para forma decimal, mantendo os custos específicos em termos percentuais. Além disso, a soma das ponderações será sempre igual a 1,0. 
+
+Se o custo do capital próprio for através de lucros retidos, a ponderação do capital próprio será multiplicada por $r_{r}$ e a parte final da equação será ($w_{s} \times r_{r}$); mas se depender de novas ações ordinárias, será usado o custo $r_{n}$ e ($w_{s} \times r_{n}$).
+
+O cálculo do WACC será exemplificado com mais detalhes na seção seguinte de casos práticos.
+
+
+
+
+  
+
+\section{Casos práticos}
+
+\subsection{Cálculo do Custo de Capital de Terceiros}
+
+
+\subsection{Cálculo do Custo de Capital Próprio pelo CAPM}
+
+
+
+
+\subsection{Cálculo do CAPM para empresas alavancadas}
+
+
+
+
+\subsection{Cálculo do WACC}
+
+
+
+
+
+
+\end{document}
