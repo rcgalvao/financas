@@ -1,0 +1,235 @@
+\documentclass[10pt]{beamer}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{Gestão financeira de curto prazo}
+\subtitle{Modelo de Baumol}
+%\date{\today}
+\date{}
+\author{Prof. Dr. Ricardo Galvão}
+\institute{www.rgalvao.com}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Conteúdo da apresentação}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Introdução}
+
+
+\begin{frame}[fragile]{Gestão do caixa}
+
+A quantidade de recursos alocados no caixa da empresa é uma das variáveis que o administrador financeiro deve dedicar atenção e cuidado. É necessário entender que o excesso de capital no caixa reduz a rentabilidade da empresa, conforme apresentado na equação de cálculo do ROE a seguir:\\
+\begin{center} $ \downarrow ROE = \frac{LL}{\uparrow PL} $  \end{center}
+A princípio, um aumento no caixa implica em um aumento no Patrimônio Líquido.\footnote{Pode haver um aumento no passivo ao invés do patrimônio líquido. Nesta situação, a despesa financeira aumentaria, o que reduziria o lucro líquido e levaria também a uma redução no ROE.}
+Sendo assim, o ideal é que a empresa funcione sem que haja falta nem excesso de caixa.
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Modelos de gestão do caixa}
+
+Há dois modelos mundialmente difundidos sobre gestão do caixa que serão neste documento apresentados. O primeiro deles é o modelo de Baumol e o segundo é o modelo de Miller-Orr.\\
+Ambos possuem pressupostos e fórmulas específicas, cabendo ao administrador financeiro a escolha do modelo mais adequado ao negócio em questão.
+
+\end{frame}
+
+
+
+\section{O modelo de Baumol}
+
+
+\begin{frame}[fragile]{O modelo de Baumol}
+
+O modelo de Baumol tem por objetivo oferecer uma sistemática de gerenciamento de caixa. Ou seja, tem-se por objetivo determinar a quantidade mais adequada de recursos alocados no caixa da empresa.\\ O autor se inspirou na gestão de estoques, mais precisamente na ideia de lote econômico de compra, para desenvolver o seu modelo.
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Artigo original do modelo de Baumol}
+
+Baumol, W. J. (1952). The Transactions Demand for Cash: An Inventory Theoretic Approach. The Quarterly Journal of Economics, 66(4), 545–556. Retrieved from http://www.jstor.org/stable/1882104
+
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Baumol}
+
+O modelo de Baumol leva em conta o custo de oportunidade e o custo da operação. \\
+O custo de oportunidade considera os melhores usos possíveis ao capital ao invés de apenas alocá-lo no caixa.\\
+O custo de operação considera o gasto da empresa ao realizar operações junto a qualquer instituição financeira.\\
+O equilíbrio entre o custo de oportunidade e o custo de operação é o cerne do modelo.
+
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Baumol}
+
+A ideia central é que a empresa realize uma operação de saque de recursos todas as vezes que o saldo de caixa chegar a zero. Este saque será no valor definido no modelo como lote econômico de caixa (C).\\
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{Baumol.png}
+    %\caption{Exemplo gráfico do modelo de Baumol}
+    %\caption*{Fonte:Hagart, 2013}
+    \label{fig:Baumol}
+     \\ \tiny Fonte: Hagart(2013)\footnote{\tiny Disponível em: https://upload.wikimedia.org/wikipedia/commons/a/a5/Baumol.png}
+  \end{center}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Baumol - Cálculo}
+
+Para calcular o nível ótimo de caixa, deve-se utilizar a seguinte equação:\\
+\begin{center}
+$ C = \sqrt{\frac{2.b.T}{i}} $
+\end{center}
+\scriptsize Onde:\\ 
+b representa o custo de transação. \\ 
+T representa o valor total do caixa líquido (Pagamentos - recebimentos). \\ 
+i representa a taxa de juros relativa ao custo de oportunidade.\\
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Baumol - Exemplo}
+
+Qual o nível ótimo de caixa de uma empresa que tem um custo de capital de 12\%a.a., um caixa líquido anual de R\$ 300.000,00 e um custo de transação de R\$ 80,00?  \\
+
+$ C = \sqrt{\frac{2.b.T}{i}} $\\
+$ C = \sqrt{\frac{2.80,00.300000,00}{0,12}} $\\
+$ C = \sqrt{\frac{48000000,00}{0,12}} $\\
+$ C = \sqrt{400000000,00} $\\
+$ C = 20.000,00$\\
+
+O nível ótimo de caixa é de R\$ 20.000,00.\\ O saldo médio corresponde à metade do nível ótimo de caixa, sendo R\$ 10.000,00.
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Baumol - Pressupostos}
+
+Os problemas envolvendo a aplicação do modelo de Baumol se dão no atendimento aos respectivos pressupostos. O modelo pressupõe que há condições de certeza, o que não se aplica para a esmagadora maioria das empresas.
+
+
+\end{frame}
+
+
+
+
+
+
+\section{O modelo de Miller-Orr}
+
+
+\begin{frame}[fragile]{O modelo de Miller-Orr}
+
+Assim como o modelo de Baumol, o modelo de Miller-Orr tem por objetivo oferecer uma sistemática de gerenciamento de caixa. O avanço do modelo de Miller-Orr em consistiu em considerar que o caixa apresenta variações aleatórias. Desta forma, o modelo estabelece limites mínimos e máximos de caixa, devendo o gestor tomar providências quando o saldo atingir um desses limites.
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Artigo original do modelo de Miller-Orr}
+
+Miller, Merton H., ORR, Daniel. A model of the demand for money by firms. Quarterly Journal of Economics, Aug. 1966;
+
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Miller-Orr}
+
+O modelo estabele três limites de caixa:
+\begin{itemize}
+  \item Limite mínimo de caixa: Sempre que o caixa atingir o limite mínimo, deve-se obter capital suficiente para elevar o caixa ao limite ótimo.
+  \item Limite máximo de caixa: Sempre que o caixa atingir o limite máximo, deve-se aplicar o valor correspondente entre o limite máximo e o limite ótimo. Ou seja, sempre que se chegar ao limite máximo, deve-se deixar o caixa no limite ótimo, destinando o recurso em excesso para outro fim.
+  \item Limite ótimo de caixa: Objetivo que deve se atingido sempre que o caixa atingir os limites mínimo ou máximo.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Miller-Orr}
+
+Conforme observado no gráfico abaixo, o caixa flutua livremente entre os limites mínimo e máximo. Se chegar ao limite máximo, deve-se destinar o caixa  aos acionistas, ao pagamento de dívidas ou a projetos rentáveis. Se chegar ao limite mínimo, deve-se obter recursos a aplicar no caixa.\\
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{Miller-orr.png}
+    %\caption{Exemplo gráfico do modelo de Baumol}
+    %\caption*{Fonte:Hagart, 2013}
+    \label{fig:Miller-orr}
+     \\ \tiny Fonte: Hagart(2013)\footnote{\tiny Disponível em: https://upload.wikimedia.org/wikipedia/commons/5/5c/Miller-orr.png}
+  \end{center}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Miller-Orr - Cálculo}
+
+Para calcular o nível ótimo de caixa, deve-se utilizar a seguinte equação:\\
+\begin{center}
+$ Z = \sqrt[3]{\frac{3.b.\sigma ^{2}}{4.i}}+hmin$ \\
+\end{center}
+Para calcular o limite máximo de caixa, deve-se utilizar a seguinte equação:
+\begin{center}
+$h = 3Z + hmin$\\
+\end{center}
+\scriptsize \underline{Onde:}\\ 
+b: custo fixo de transação de cada operação para títulos financeiros;\\
+$\sigma ^{2}$: variância dos saldos líquidos diários do caixa;\\
+$i$: taxa de juros dos títulos financeiros;\\
+$hmin$: limite inferior ou nível mínimo do caixa. É determinado pelo gestor e pode ser inclusive zero.\\
+
+\end{frame}
+
+\begin{frame}[fragile]{O modelo de Miller-Orr - Exemplo}
+
+Quais os limites ótimo e máximo de caixa de uma empresa cuja variância do caixa está em torno de 15.600.000, custo fixo de transação em R\$ 120,00 e taxa de desconto em 16\%? Considere o limite inferior igual a zero.  \\
+$ Z = \sqrt[3]{\frac{3.b.\sigma ^{2}}{4.i}}+hmin$ \\
+$ Z = \sqrt[3]{\frac{3.120.15600000}{4.0,16}}+0$ \\
+$ Z = \sqrt[3]{\frac{5616000000}{0,64}}$ \\
+$ Z = \sqrt[3]{8775000000}$ \\
+$ Z = 2062,60$\\
+O limite ótimo é de R\$2.062,60\\
+$h = 3Z + hmin$\\
+$h = 3.2062,60 + 0$\\
+$h = 6187,81$\\
+O limite máximo é de R\$ 6.187,81
+\end{frame}
+
+
+
+\section{Conclusão}
+
+
+\begin{frame}[fragile]{Conclusão e considerações}
+Esta breve apresentação teve por objetivo compilar de maneira concisa o que é e como calcular os valores dos modelos de Baumol e Miller-Orr.\\
+Trata-se de mais um documento do projeto \textbf{Repositório de código aberto voltado a textos sobre Finanças} do professor Ricardo Galvão, que tem por objetivo disponibilizar livremente materiais nas áreas de investimentos e finanças seguindo a licença Creative Commons Attribution-ShareAlike.
+
+
+\end{frame}
+
+
+\begin{frame}{Créditos}
+
+Tanto esta apresentação quanto as imagens e o tema utilizados estão sob a licença  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
+  Attribution-ShareAlike 4.0 International License}.
+  \begin{center}\ccbysa\end{center}
+
+A apostila pode ser obtida no endereço:
+\begin{center}\url{github.com/rcgalvao/financas}\end{center}
+
+O tema pode ser obtido no endereço: 
+\begin{center}\url{github.com/matze/mtheme}\end{center}
+
+\end{frame}
+
+
+\end{document}
